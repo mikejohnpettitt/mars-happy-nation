@@ -9,6 +9,7 @@ const silkscreen = Silkscreen({
 
 const sourceCodePro = Source_Code_Pro({
   variable: "--font-source-code-pro",
+  weight: "500",
   subsets: ["latin"],
 });
 
@@ -20,7 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${silkscreen.variable} ${sourceCodePro.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

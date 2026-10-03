@@ -17,5 +17,5 @@ $light-gray: #fffefb;
 $mid-light-gray: #e4e4e4;
 $dark-gray: #1a1a1a;
 
-$body-font: "Source Code", Helvetica, sans-serif;
-$headers-font: Silkscreen, Helvetica, sans-serif;
+$body-font: var(--font-source-code-pro), Courier, monospace;
+$headers-font: var(--font-silkscreen), Helvetica, sans-serif;

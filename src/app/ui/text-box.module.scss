@@ -3,4 +3,12 @@
 .textBox {
     background-color: $cream;
     color: $dark-gray;
+    margin: 1em;
+    padding: 1em 2em 2em 2em;
+    text-align: left;
+}
+
+.textBox > h2 {
+    font-size: 2em;
+    color: $dark-blue;
 }

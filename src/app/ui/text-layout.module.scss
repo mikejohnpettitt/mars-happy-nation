@@ -1,0 +1,25 @@
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns > * {
+    margin: 1em;
+}
+
+.profilePicture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 1em 0 0 0;
+}
+
+.profilePictureContainer {
+    position: relative;
+}
+
+.logoOverlay {
+    position: absolute;
+    bottom: 1.4em;
+    right: 0;
+}
