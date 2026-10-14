@@ -1,0 +1,74 @@
+@use "../styles/variables" as *;
+
+.carouselContainer {
+    margin: 2em 0 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.imageContainer {
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.imageContainer > * {
+    margin: 0.2em;
+    scroll-snap-align: start;
+    height: 366px;
+    width: 366px;
+}
+
+.imageContainer::scroll-button(*) {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(-45deg, $mid-light-gray 15%, $light-gray 72%) !important;
+    outline: none;
+    border: none;
+    color: $dark-gray;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 20%);
+    transition: opacity 0.5s;
+    font: var(--fa-font-solid);
+    display: inline-block;
+    margin-inline-end: 0.5rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.imageContainer::scroll-button(*):enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imageContainer::scroll-button(*):disabled {
+    opacity: 0;
+    cursor: default;
+}
+
+.imageContainer::scroll-button(left) {
+    //content: "<";
+    left: 10px;
+    content: "\f060";
+}
+
+.imageContainer::scroll-button(right) {
+  //content: ">";
+  right: 10px;
+  content: "\f061"; /* house icon */
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    .imageContainer > * {
+        margin: 1em;
+        scroll-snap-align: start;
+        height: 200px;
+        width: 200px;
+    }
+}

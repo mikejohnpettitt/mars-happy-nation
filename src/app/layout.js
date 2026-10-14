@@ -1,5 +1,11 @@
 import { Silkscreen, Source_Code_Pro } from "next/font/google";
 import "./globals.scss";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-free/css/fontawesome.css";
+import "@fortawesome/fontawesome-free/css/solid.css";
+
+config.autoAddCss = false;
 
 const silkscreen = Silkscreen({
   variable: "--font-silkscreen",

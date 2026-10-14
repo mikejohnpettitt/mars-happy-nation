@@ -1,12 +1,23 @@
 import TextBox from "@/app/ui/text-box";
 import Navbar from "@/app/ui/navbar";
 import Logo from "@/app/ui/logo";
+import Carousel from "@/app/ui/carousel";
 import SkillTag from "@/app/ui/skill-tag";
 import styles from "@/app/ui/text-layout.module.scss";
 import skillTagStyles from "@/app/ui/skill-tag.module.scss";
 import Image from "next/image";
 
 export default function Home() {
+
+  const projectImages = [
+    {url: "/images/Placeholder_1.png", description: "First Placeholder"},
+    {url: "/images/Placeholder_2.png", description: "Second Placeholder"},
+    {url: "/images/Placeholder_3.png", description: "Third Placeholder"},
+    {url: "/images/Placeholder_1.png", description: "Fourth Placeholder"},
+    {url: "/images/Placeholder_2.png", description: "Fifth Placeholder"},
+    {url: "/images/Placeholder_3.png", description: "Sixth Placeholder"}
+  ]
+
   return (
     <div className="container">
       <Navbar />
@@ -63,6 +74,10 @@ export default function Home() {
             <SkillTag category={"language"} label={"Spanish - Intermediate (DELE B1)"}></SkillTag>
             <SkillTag category={"language"} label={"Mandarin Chinese - Beginner (HSK3)"}></SkillTag>
           </div>
+        </div>
+
+        <div>
+          <Carousel images={projectImages}/>
         </div>
       </TextBox>
     </div>
