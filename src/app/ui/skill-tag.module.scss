@@ -1,0 +1,37 @@
+@use "../styles/variables" as *;
+
+.skillTagContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.skillTag {
+    height: 1.4em;
+    padding: 0.6em 1em;
+    border: 1px solid;
+    font-family: $headers-font;
+    border-radius: 1.4em;
+    width: fit-content;
+    margin: 0.2em;
+}
+
+.code {
+    border-color: $green;
+    color: $green;
+}
+
+.technical {
+    border-color: $orange;
+    color: $orange;
+}
+
+.software {
+    border-color: $dark-blue;
+    color: $dark-blue;
+}
+
+.language {
+    border-color: $blue;
+    color: $blue;
+}

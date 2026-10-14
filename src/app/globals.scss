@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
   text-align: center;
   background-color: $dark-blue;
   color: $cream;
-  font-weight: 300;
+  font-weight: 100;
   margin: 0;
 }
 
@@ -32,4 +33,8 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
 }
