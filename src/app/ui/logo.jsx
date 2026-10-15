@@ -1,6 +1,6 @@
 import styles from "@/app/ui/logo.module.scss";
 
-export default function Logo({size, type}) {
+export default function Logo({size, type, subtitle}) {
   return (
     <div className={`${styles.logoContainer} ${styles[size]}`}>
       {type === "complete" &&
@@ -10,6 +10,10 @@ export default function Logo({size, type}) {
       <div className={styles.text}>M</div>
 }
       <div className={styles.mars}></div>
+
+      {subtitle && 
+      <div className={styles.subtitle}>multimedia design</div>
+      }
     </div>
   )
 }

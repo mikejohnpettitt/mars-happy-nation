@@ -15,7 +15,7 @@ const silkscreen = Silkscreen({
 
 const sourceCodePro = Source_Code_Pro({
   variable: "--font-source-code-pro",
-  weight: "500",
+  weight: "300",
   subsets: ["latin"],
 });
 
